@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Farsan&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Style+Script&display=swap");
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(216, 215, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Business Card Container */
+.business-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow added for depth */
+    width: 280px;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px; /* Optional, for rounded corners */
+}
+
+/* Profile Section */
+.profile {
+    background-color: rgb(7, 36, 117);
+    margin-top: -20px;
+    height: 200px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+
+.profile h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Playfair Display', sans-serif;
+    color: white;
+}
+
+.profession {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Contact Info Section */
+.contact-info {
+    background: rgb(217, 216, 216);
+    margin-top: 50px;
+    height: 140px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    color: black;
+    margin: 5px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .business-card {
+        width: 90%;
+    }
+}
+
+.business-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle hover shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-info i {
+    background-color: rgb(7, 36, 117);
+    padding: 3.5px;
+    color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.email-icon {
+    margin-left: -43px;
+    margin-top: 15px;
+}
+
+.phone-icon {
+    margin-left: -93px;
+    margin-top: 15px;
+}
+
+.website-icon {
+    margin-left: -105px;
+    margin-top: 15px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease; 
+}
+
+a:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    color: rgb(7, 36, 117); /* Change icon color */
+}
+
+/* Social Media Section */
+.social-media {
+    background-color: rgb(217, 216, 216);
+    margin-top: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjusted gap between icons */
+}
+
+/* Social Media Icons */
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; /* Rounded icons */
+    font-size: 20px;
+    color: rgb(7, 36, 117); /* Default icon color */
+    transition: all 0.3s ease; /* Smooth transition for hover */
+    text-decoration: none;
+    margin: 0 7px;
+}
+
+/* Hover effect for social media icons */
+.social-media a:hover {
+    background-color: rgb(7, 36, 117); /* Icon background on hover */
+    color: #fff; /* Icon color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Style for the new heading */
+.main-heading {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 36px; /* Adjust the size to your preference */
+    text-align: center;
+    margin-bottom: 40px; /* Space between the heading and the business card */
+    color: rgb(7, 36, 117); /* Color for the heading */
+    position: absolute; /* Make it positioned relative to the body */
+    top: 20px; /* Adjust the distance from the top of the page */
+    width: 100%; /* Ensure the heading takes full width */
+    left: 0;
+    margin-top: 10px;
+}
